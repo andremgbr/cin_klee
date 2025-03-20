@@ -89,3 +89,6 @@ Basta tão executar o seguinte comando para executar o teste:
 Com o nosso exemplo acima, ao executar o teste1, o binário irá dar o erro, por causa da divisão por zero, se nós modificarmos o
 código, solucionando o erro de divisão por 0, o arquivo teste_2.c, podemos então executar novamente o comando acima que o erro não
 irá mais aparecer.
+
+## Resultados
+Dentro da pasta cin do repositório, estão os arquivos gerados pelas etapas acimas
