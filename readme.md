@@ -19,8 +19,8 @@ Para este exemplo, primeiramente inicia um conteiner no docker com o seguinte co
 ```docker run --rm -ti --ulimit='stack=-1:-1' klee/klee:3.0```
 
 No container do docker, crie uma pasta no /home/klee/cin
-1º Criar pasta dentro do container: ```mkdir /home/klee/cin``` e vá até ela ```cd /home/klee/cin```
-2º Na sua máquina, em um outro terminal, copie o arquivo do repositório com o comando ```docker cp teste.c container_id:/home/klee/cin/teste.c``` para importar o arquivo para o container./
+* 1º Criar pasta dentro do container: ```mkdir /home/klee/cin``` e vá até ela ```cd /home/klee/cin```
+* 2º Na sua máquina, em um outro terminal, copie o arquivo do repositório com o comando ```docker cp teste.c container_id:/home/klee/cin/teste.c``` para importar o arquivo para o container.
 Com isso, o arquivo teste.c estará dentro da pasta cin do container.
 
 
