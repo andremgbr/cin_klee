@@ -1,0 +1,14 @@
+array b[4] : w32 -> w8 = symbolic
+array c[4] : w32 -> w8 = symbolic
+array d[4] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 4294967295
+                 N0:(ReadLSB w32 0 b)))
+         (Eq false (Slt 10 N0))
+         (Eq false (Slt N0 4294967286))
+         (Eq 4294967295
+             (Mul w32 (SRem w32 (ReadLSB w32 0 c)
+                                3)
+                      (And w32 (ReadLSB w32 0 d)
+                               7)))]
+        false)
